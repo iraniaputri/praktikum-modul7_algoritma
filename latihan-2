@@ -1,0 +1,20 @@
+def cari_akhiran(angka):
+    if angka == 1:
+        return "st"
+    elif angka == 2:
+        return "nd"
+    elif angka == 3:
+        return "rd"
+    else:
+        return "th"
+
+print("Ordinal Number - ketik 0 untuk menghentikan program")
+
+while True:
+    angka = int(input("Masukkan angka: "))
+    akhiran = cari_akhiran(angka)
+    print(angka, akhiran)
+    
+    if angka == 0:
+        print("Terima kasih telah menggunakan program saya")
+        break
